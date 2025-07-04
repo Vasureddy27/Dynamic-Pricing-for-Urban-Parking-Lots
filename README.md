@@ -143,8 +143,7 @@ This project showcases how data-driven dynamic pricing can be built from scratch
 ---
 
 ## 10. Capstone Project Flow
-
-'''mermaid
+```mermaid
 flowchart TD
     A[Capstone Project: Dynamic Pricing for Urban Parking Lots]
 
