@@ -2,7 +2,7 @@
 
 **Program:** Summer Analytics 2025
 **Organized by:** Consulting & Analytics Club × Pathway
-**Team Member:** Arnav Anand
+**Team Member:** Madderi Vasu
 
 ---
 
