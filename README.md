@@ -140,4 +140,58 @@ This project showcases how data-driven dynamic pricing can be built from scratch
 * Summer Analytics 2025 Problem Statement
 * Bokeh Docs: [https://docs.bokeh.org/](https://docs.bokeh.org/)
 
+---
+
+## 10. Capstone Project Flow
+
+'''mermaid
+flowchart TD
+    A[Capstone Project: Dynamic Pricing for Urban Parking Lots]
+
+    A --> B[1. Introduction]
+    B --> B1[Problem: Static pricing inefficiency]
+    B --> B2[Solution: Dynamic pricing with ML and Pathway]
+
+    A --> C[2. Dataset Overview]
+    C --> C1[14 lots, 73 days, 18 time points per day]
+    C --> C2[Features: Location, Occupancy, Queue, Vehicle Type, Traffic, Special Day, Timestamp]
+
+    A --> D[3. Data Preprocessing]
+    D --> D1[Combine date and time to timestamp]
+    D --> D2[Standardize column names]
+    D --> D3[Saved as cleaned_dataset.csv]
+
+    A --> E[4. Model Implementation]
+    E --> E1[Model 1: Linear Pricing]
+    E1 --> E1a[Price t plus one equals Price t plus alpha times occupancy divided by capacity]
+
+    E --> E2[Model 2: Demand-Based]
+    E2 --> E2a[Multiple variables: occupancy, queue, traffic, etc.]
+    E2 --> E2b[Normalized demand to smooth price]
+
+    E --> E3[Model 3: Competitive Pricing]
+    E3 --> E3a[Compare nearby lots using geopy]
+    E3 --> E3b[Adjust price based on competitor prices]
+
+    A --> F[5. Real-Time Streaming with Pathway]
+    F --> F1[Stream cleaned CSV]
+    F --> F2[Use schema and @pw.udf for logic]
+    F --> F3[Output to JSONL]
+
+    A --> G[6. Visualization]
+    G --> G1[Real-time plot with Bokeh]
+    G --> G2[Prices over time using stream]
+
+    A --> H[7. Summary]
+    H --> H1[Model 1 to Benchmark]
+    H --> H2[Model 2 to Demand-aware]
+    H --> H3[Model 3 to Competition-aware]
+
+    A --> I[8. Future Work]
+    I --> I1[Rerouting suggestions]
+    I --> I2[Distance-based competition logic]
+    I --> I3[Deploy via Pathway cloud]
+
+    A --> J[9. References]
+
 
