@@ -140,7 +140,4 @@ This project showcases how data-driven dynamic pricing can be built from scratch
 * Summer Analytics 2025 Problem Statement
 * Bokeh Docs: [https://docs.bokeh.org/](https://docs.bokeh.org/)
 
----
 
-Prepared by: **Arnav Anand**
-IIT Student | 2nd Year Computer Science Student| Capstone Project 2025
