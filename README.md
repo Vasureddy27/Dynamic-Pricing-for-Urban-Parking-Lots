@@ -1,5 +1,3 @@
-# -Capstone-Project-of-Summer-Analytics-2025
-
 # Capstone Project Report: Dynamic Pricing for Urban Parking Lots
 
 **Program:** Summer Analytics 2025
